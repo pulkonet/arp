@@ -170,7 +170,7 @@
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="http://www.fb.com/aryankhaitan1121">
                     <i class="fa fa-facebook"></i>
                   </a>
                 </li>
@@ -194,7 +194,7 @@
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="http://www.fb.com/kanha.goyal.12">
                     <i class="fa fa-facebook"></i>
                   </a>
                 </li>
@@ -213,17 +213,17 @@
               <p class="text-muted">Manager</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-twitter"></i>
+                  <a href="http://www.github.com/pulkonet">
+                    <i class="fa fa-github"></i>
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="http://www.fb.com/pulkonet">
                     <i class="fa fa-facebook"></i>
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="http://www.linkedin.com/in/pulkonet">
                     <i class="fa fa-linkedin"></i>
                   </a>
                 </li>
@@ -242,7 +242,7 @@
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="http://www.fb.com/shonaksoni">
                     <i class="fa fa-facebook"></i>
                   </a>
                 </li>
@@ -269,8 +269,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Contact Us</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h2 class="section-heading text-uppercase">Join Us</h2>
+            <h3 class="section-subheading text-muted">We <i class="fa fa-heart" style="color: Red" ></i> new friends</h3>
           </div>
         </div>
         <div class="row">
@@ -280,6 +280,10 @@
                 <div class="col-md-6">
                   <div class="form-group">
                     <input class="form-control" id="name" type="text" placeholder="Your Name *" required data-validation-required-message="Please enter your name.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="apply" type="text" placeholder="Applying for Teaching Assistant / Representative *" required data-validation-required-message="Please enter your choice.">
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
@@ -293,14 +297,14 @@
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <textarea class="form-control" id="message" placeholder="Your Message *" required data-validation-required-message="Please enter a message."></textarea>
+                    <textarea class="form-control" id="message" placeholder="How can you contribute to our cause? *" required data-validation-required-message="Please enter your message."></textarea>
                     <p class="help-block text-danger"></p>
                   </div>
                 </div>
                 <div class="clearfix"></div>
                 <div class="col-lg-12 text-center">
                   <div id="success"></div>
-                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
+                  <button id="submit" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
                 </div>
               </div>
             </form>
@@ -335,7 +339,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-md-4">
+          <!-- <div class="col-md-4">
             <ul class="list-inline quicklinks">
               <li class="list-inline-item">
                 <a href="#">Privacy Policy</a>
@@ -344,28 +348,24 @@
                 <a href="#">Terms of Use</a>
               </li>
             </ul>
-          </div>
+          </div> -->
         </div>
       </div>
     </footer>
     <script type="text/javascript">
-      $("#submita").on('click',function(e) {
+      $("#submit").on('click',function(e) {
         e.preventDefault(); // avoid to execute the actual submit of the form.
         // change form link
-        var url = "https://docs.google.com/forms/d/e/1FAIpQLSeQhaWwxk2EJ-drdKdXr4LePi0CJtHEuNcOWftItpx1rGhhkQ/viewform"; // the script where you handle the form input.
+         console.log( $( this ).serialize() );
+        var url = "https://docs.google.com/forms/d/e/1FAIpQLSfyaSzXrqdSHJUwGcmyWiY7q3VfVCwXCc2_ThdTNBmWbhad-Q/viewform"; // the script where you handle the form input.
         $.ajax({
           type: "POST",
           url: url,
-               data: $("#mG61Hd").serialize(), // change ID
-               success: function(data)
-               {
-               },
-               error: function (xhr, ajaxOptions, thrownError) {
-
-           $('#success').modal('open');
-               document.getElementById('mG61Hd').reset();
-               }
-           });
+          data: $("#contactForm").serialize(), // change ID
+          success: function(data)
+          {
+          },
+          error: function (xhr, ajaxOptions, thrownError) {
 
     });
   </script>

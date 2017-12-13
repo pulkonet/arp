@@ -454,7 +454,7 @@ section#contact {
     section#contact .form-group input.form-control {
       height: auto; }
     section#contact .form-group textarea.form-control {
-      height: 248px; }
+      height: 300px; }
   section#contact .form-control:focus {
     border-color: #f36192;
     box-shadow: none; }
