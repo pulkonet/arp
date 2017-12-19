@@ -1,8 +1,8 @@
 {
   "title": "ARP",
   "name": "Academic Reinforcement Program",
-  "version": "4.0.0-beta.2",
-  "description": "A tagline needed here",
+  "version": "1.0.0",
+  "description": "Learn to teach, Teach to learn",
   "keywords": [
     "ugta",
     "reinforcement",
@@ -15,7 +15,7 @@
     "academic",
     "undergraduate"
   ],
-  "homepage": "https://arp.iitr.ac.in",
+  "homepage": "http://arp.iitr.ac.in",
   "bugs": {
     "url": "https://github.com/pulkonet/arp/issues",
     "email": "ugtaiitr@gmail.com"
