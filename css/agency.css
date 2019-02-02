@@ -431,7 +431,8 @@ header.masthead {
   .team-member img {
     width: 225px;
     height: 225px;
-    border: 7px solid #fff; }
+    border: 7px solid #fff;
+    object-fit: cover;}
   .team-member h4 {
     margin-top: 25px;
     margin-bottom: 0;
