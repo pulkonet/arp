@@ -30,7 +30,9 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- Custom styles for this template -->
-    <link href="css/agency.min.css" rel="stylesheet">
+    <link href="css/agency.min.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
   </head>
 
@@ -80,6 +82,63 @@
         </div>
       </div>
     </header>
+
+  <!-- Blog Card   -->
+  <section id="blog-card">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">Blogs</h2>
+        <h3 class="section-subheading text-muted"></h3>
+      </div>
+    </div>
+    <div class="blog-slider">
+      <div class="blog-slider__wrp swiper-wrapper">
+        <!-- 1 -->
+        <div class="blog-slider__item swiper-slide">
+          <div class="blog-slider__img">
+            <img
+              src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759872/kuldar-kalvik-799168-unsplash.jpg"
+              alt="">
+          </div>
+          <div class="blog-slider__content">
+            <span class="blog-slider__code">26 December 2019 (Blog Date)</span>
+            <div class="blog-slider__title">Blog Title</div>
+            <div class="blog-slider__text">Blog description </div>
+            <a href="#" class="blog-slider__button">READ MORE(medium page link)</a>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="blog-slider__item swiper-slide">
+          <div class="blog-slider__img">
+            <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759871/jason-leung-798979-unsplash.jpg"
+              alt="">
+          </div>
+          <div class="blog-slider__content">
+            <span class="blog-slider__code">26 December 2019 (Blog Date)</span>
+            <div class="blog-slider__title">Blog Title 2</div>
+            <div class="blog-slider__text">Blog description 2</div>
+            <a href="#" class="blog-slider__button">READ MORE(medium page link)</a>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="blog-slider__item swiper-slide">
+          <div class="blog-slider__img">
+            <img
+              src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759871/alessandro-capuzzi-799180-unsplash.jpg"
+              alt="">
+          </div>
+          <div class="blog-slider__content">
+            <span class="blog-slider__code">26 December 2019 (Blog Date)</span>
+            <div class="blog-slider__title">Blog Title 3</div>
+            <div class="blog-slider__text">Blog description 3</div>
+            <a href="#" class="blog-slider__button">READ MORE(medium page link)</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="blog-slider__pagination"></div>
+    </div>
+  </section>
 
     <!-- Services -->
     <section id="services">
@@ -1282,6 +1341,19 @@
           $('#contactForm').trigger("reset")
           )
         })
+    var swiper = new Swiper('.blog-slider', {
+      spaceBetween: 30,
+      effect: 'fade',
+      loop: true,
+      mousewheel: {
+        invert: false,
+      },
+      // autoHeight: true,
+      pagination: {
+        el: '.blog-slider__pagination',
+        clickable: true,
+      }
+    });
   </script>
     <!-- Bootstrap core JavaScript -->
 
